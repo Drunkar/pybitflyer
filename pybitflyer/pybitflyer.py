@@ -11,8 +11,8 @@ from .exception import AuthException
 
 class API(object):
 
-    def __init__(self, api_key=None, api_secret=None, timeout=None):
-        self.api_url = "https://api.bitflyer.jp"
+    def __init__(self, api_key=None, api_secret=None, api_url="https://api.bitflyer.com", timeout=None):
+        self.api_url = api_url
         self.api_key = api_key
         self.api_secret = api_secret
         self.timeout = timeout
